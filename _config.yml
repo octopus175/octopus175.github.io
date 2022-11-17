@@ -69,7 +69,7 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/octopus175"
     - label: "Hack The Box"
-      icon: "far fa-fw fa-cube"
+      icon: "fas fa-fw fa-cube"
       url: "https://app.hackthebox.com/profile/485523"
 
 footer:
@@ -81,7 +81,7 @@ footer:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
     - label: "Hack The Box"
-      icon: "far fa-fw fa-cube"
+      icon: "fas fa-fw fa-cube"
       url: "https://app.hackthebox.com/profile/485523"
 
 defaults:
