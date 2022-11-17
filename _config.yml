@@ -63,7 +63,7 @@ author:
       icon: "fas fa-fw fa-link"
       url: "https://octopus175.github.io/"
     - label: "LinkedIn"
-      icon: "fa-brands fa-fw fa-linkedin-in"
+      icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/matthew-law-a8b5131bb/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -75,7 +75,7 @@ author:
 footer:
   links:
     - label: "LinkedIn"
-      icon: "fa-brands fa-fw fa-linkedin-in"
+      icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/matthew-law-a8b5131bb/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
