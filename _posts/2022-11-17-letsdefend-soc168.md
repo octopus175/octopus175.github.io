@@ -31,6 +31,7 @@ Device Action Allowed
 Attacker is trying to exploit the parameter "s" by sending different payload which contains system command like ls, cat, uname and whoami.
 
 All of these request is getting HTTP Response Status 200 and the Response Size is non-zero, here is one of the dangerous request where attacker is trying to read the shadow file that contains user creds.
+
 ![Log1](/assets/images/Pasted_image_20221112005247.png){:class="img-responsive"}
 
 More request log:
