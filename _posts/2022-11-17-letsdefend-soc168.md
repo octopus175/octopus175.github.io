@@ -32,8 +32,10 @@ Attacker is trying to exploit the parameter "s" by sending different payload whi
 
 All of these request is getting HTTP Response Status 200 and the Response Size is non-zero, here is one of the dangerous request where attacker is trying to read the shadow file that contains user creds.
 ![Log1](/assets/images/Pasted_image_20221112005247.png){:class="img-responsive"}
+
 More request log:
 ![Log 2](/assets/images/Pasted_image_20221112005519.png){:class="img-responsive"}
+
 Looking at the Response Size of the request, I believe the web server is returning the corresponding file that the attacker request.
 
 Let's look at the target web server and to confirm if the attacker have remote command execution:
