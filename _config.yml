@@ -63,25 +63,25 @@ author:
       icon: "fas fa-fw fa-link"
       url: "https://octopus175.github.io/"
     - label: "LinkedIn"
-      icon: "fa-brands fa-linkedin-in"
+      icon: "fa-brands fa-fw fa-linkedin-in"
       url: "https://www.linkedin.com/in/matthew-law-a8b5131bb/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/octopus175"
     - label: "Hack The Box"
-      icon: "fa-regular fa-cube"
+      icon: "fa-regular fa-fw fa-cube"
       url: "https://app.hackthebox.com/profile/485523"
 
 footer:
   links:
     - label: "LinkedIn"
-      icon: "fa-brands fa-linkedin-in"
+      icon: "fa-brands fa-fw fa-linkedin-in"
       url: "https://www.linkedin.com/in/matthew-law-a8b5131bb/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
     - label: "Hack The Box"
-      icon: "fa-regular fa-cube"
+      icon: "fa-regular fa-fw fa-cube"
       url: "https://app.hackthebox.com/profile/485523"
 
 defaults:
