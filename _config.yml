@@ -57,32 +57,32 @@ plugins:
 author:
   name   : "octopus175"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "You can't know what you don't know. You can't know about things you have yet to discover."
+  bio    : "You can't know what you don't know."
   links:
-    - label: "Website"
+    - label: "Personal blog"
       icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://octopus175.github.io/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linked-in"
+      url: "https://www.linkedin.com/in/matthew-law-a8b5131bb/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/octopus175"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+    - label: "Hack The Box"
+      icon: "fa-regular fa-cube"
+      url: "https://app.hackthebox.com/profile/485523"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linked-in"
+      url: "https://www.linkedin.com/in/matthew-law-a8b5131bb/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+    - label: "Hack The Box"
+      icon: "fa-regular fa-cube"
+      url: "https://app.hackthebox.com/profile/485523"
 
 defaults:
   # _posts
