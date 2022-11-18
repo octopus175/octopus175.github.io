@@ -221,22 +221,22 @@ $('#download-pdf').click(function(e) {
 
 Exporting pdf and check the pdf content:
 
-![photo1](/assets/images/Pasted_image_20220703165143.png){:class="img-responsive"}
+![photo1](/assets/images/Pasted_image_20220703165143.png)
 
 decided to add new course and add some html tag to it to see if it is working
 
-![photo2](/assets/images/Pasted_image_20220703165429.png){:class="img-responsive"}
+![photo2](/assets/images/Pasted_image_20220703165429.png)
 
 it is working 
 
-![photo3](/assets/images/Pasted_image_20220703165528.png){:class="img-responsive"}
+![photo3](/assets/images/Pasted_image_20220703165528.png)
 
 according to the returningURL target could be running php library mpdf:
 http://faculty.htb/mpdf/tmp/OK3J1gnALaKI2BHGQker6Wo7jy.pdf
 
 intercept request when download
 
-![photo4](/assets/images/Pasted_image_20220704191400.png){:class="img-responsive"}
+![photo4](/assets/images/Pasted_image_20220704191400.png)
 
 
 base64 decode with cyberchef, this seems to be the content of the pdf. Maybe we can modify it and create our own pdf.
@@ -247,7 +247,7 @@ base64 decode with cyberchef, this seems to be the content of the pdf. Maybe we 
 
 The encoding seems unusal than regular urlencoding, after googling I found out this is double-encoded
 
-![photo5](/assets/images/Pasted_image_20220704192429.png){:class="img-responsive"}
+![photo5](/assets/images/Pasted_image_20220704192429.png)
 
 
 found a blog talking about the LFI vulnerability in mPDF
@@ -259,7 +259,7 @@ to make it work, we have to encode the payload and send it to download.php
 
 cyberchef can help
 
-![photo6](/assets/images/Pasted_image_20220704194532.png){:class="img-responsive"}
+![photo6](/assets/images/Pasted_image_20220704194532.png)
 
 Time to execute, here I will use curl to send the payload to the server.
 
@@ -529,4 +529,4 @@ ptrace is **a system call found in Unix and several Unix-like operating systems*
 
 got root!
 
-![photo7](/assets/images/Pasted_image_20220706011117.png){:class="img-responsive"}
+![photo7](/assets/images/Pasted_image_20220706011117.png)

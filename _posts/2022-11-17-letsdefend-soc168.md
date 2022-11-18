@@ -32,20 +32,24 @@ Attacker is trying to exploit the parameter "s" by sending different payload whi
 
 All of these request is getting HTTP Response Status 200 and the Response Size is non-zero, here is one of the dangerous request where attacker is trying to read the shadow file that contains user creds.
 
-![Log1](/assets/images/Pasted_image_20221112005247.png){:class="img-responsive"}
+![Log1](/assets/images/Pasted_image_20221112005247.png)
 
 More request log:
-![Log 2](/assets/images/Pasted_image_20221112005519.png){:class="img-responsive"}
+
+![Log 2](/assets/images/Pasted_image_20221112005519.png)
 
 Looking at the Response Size of the request, I believe the web server is returning the corresponding file that the attacker request.
 
 Let's look at the target web server and to confirm if the attacker have remote command execution:
-![Log 3](/assets/images/Pasted_image_20221112005802.png){:class="img-responsive"}
+
+![Log 3](/assets/images/Pasted_image_20221112005802.png)
 
 it is confirm that the attacker were able to execute system command on the target server, we don't see any connection from the attacker ip address. However, since the attacker has the ability to execute command on target, it is best for us to quarantine that machine
-![Log 4](/assets/images/Pasted_image_20221112010151.png){:class="img-responsive"}
+
+![Log 4](/assets/images/Pasted_image_20221112010151.png)
 
 Checking the mailbox, there is no planned scanning from the pentester we hire.
 
 Lucky for me, got all correct answer
-![Result](/assets/images/Pasted_image_20221112010409.png){:class="img-responsive"}
+
+![Result](/assets/images/Pasted_image_20221112010409.png)
