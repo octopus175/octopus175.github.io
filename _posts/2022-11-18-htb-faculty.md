@@ -9,9 +9,6 @@ tags:
   - hackthebox
 ---
 
-# Hack The Box - Faculty
-
-
 ## Enumeration
 
 ### nmap scan
