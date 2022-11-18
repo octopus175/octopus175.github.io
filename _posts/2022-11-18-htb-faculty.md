@@ -334,7 +334,7 @@ got three user: root, gbyolo and developer
 
 Next thing I try to do is reading ssh private key file, but I can't find any of them. Then I move on to try to analysis the source code of the website.
 
-First off, I will look at ajax.php since it is handling all the web request that is being sent to the server
+First off, I will look at ajax.php
 ```php
 <?php
 ob_start();
@@ -358,7 +358,7 @@ if($action == 'login2'){
 }
 ```
 
-inside admin_class.php, it is import creds from db_connect.php
+inside admin_class.php, it is importing creds from db_connect.php
 ```php
 <?php
 session_start();
