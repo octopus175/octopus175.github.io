@@ -170,10 +170,12 @@ We now got username and faculty no. login to see if there are any events, found 
 Looking at the header of the website, it is using School Faculty Scheduling System. Let's see if there are any known vulnerability to this application.
 
 a login bypass exploit
-https://www.exploit-db.com/exploits/48922
+
+[https://www.exploit-db.com/exploits/48922](https://www.exploit-db.com/exploits/48922)
 
 and a stored xss exploit
-https://www.exploit-db.com/exploits/48921
+
+[https://www.exploit-db.com/exploits/48921](https://www.exploit-db.com/exploits/48921)
 
 # Exploitation
 
@@ -229,6 +231,7 @@ it is working
 ![photo3](/assets/images/Pasted_image_20220703165528.png)
 
 according to the returningURL target could be running php library mpdf:
+
 http://faculty.htb/mpdf/tmp/OK3J1gnALaKI2BHGQker6Wo7jy.pdf
 
 intercept request when download
@@ -248,7 +251,9 @@ The encoding seems unusal than regular urlencoding, after googling I found out t
 
 
 found a blog talking about the LFI vulnerability in mPDF
-https://medium.com/@jonathanbouman/local-file-inclusion-at-ikea-com-e695ed64d82f
+
+[https://medium.com/@jonathanbouman/local-file-inclusion-at-ikea-com-e695ed64d82f](https://medium.com/@jonathanbouman/local-file-inclusion-at-ikea-com-e695ed64d82f)
+
 
 to make it work, we have to encode the payload and send it to download.php
 
@@ -430,7 +435,8 @@ Hi gbyolo, you can now manage git repositories belonging to the faculty group. P
 ```
 
 Looking for meta-git vulnerability:
-https://hackerone.com/reports/728040
+
+[https://hackerone.com/reports/728040](https://hackerone.com/reports/728040)
 
 according to the sudoer file, we can run meta-git as user developer, let's try to use this method to create a file:
 ```bash
@@ -504,7 +510,7 @@ Files with capabilities (limited to 50):
 
 the capability 'cap_sys_ptrace' in gdb seems useful
 
-https://book.hacktricks.xyz/linux-hardening/privilege-escalation/linux-capabilities#cap_sys_ptrace
+[https://book.hacktricks.xyz/linux-hardening/privilege-escalation/linux-capabilities#cap_sys_ptrace](https://book.hacktricks.xyz/linux-hardening/privilege-escalation/linux-capabilities#cap_sys_ptrace)
 
 let's try to inject command into a python process
 ```bash
