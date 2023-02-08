@@ -13,12 +13,12 @@ Welcome to my write up for the easy box "Shoppy" from Hack the box, if you are i
 
 # Table of content
 
-1. [Enumeration]
-2. [Foothold]
-3. [Lateral movement]
-4. [Priv Esc]
+1. [Enumeration](#Enumeration)
+2. [Foothold](#Foothold)
+3. [Lateral movement](#Lateral movement)
+4. [Priv Esc](#Priv Esc)
 
-# Enumeration
+#Enumeration
 
 ## nmap scan result
 ```bash
@@ -112,7 +112,7 @@ Using a simple password cracking tool like hashcat or johntheripper (or just go 
 
 josh: remembermethisway
 
-# Foothold
+#Foothold
 
 ## Mattermost
 
@@ -181,7 +181,7 @@ jaeger@shoppy:~$ id
 uid=1000(jaeger) gid=1000(jaeger) groups=1000(jaeger)
 ```
 
-# Lateral movement
+#Lateral movement
 
 ALWAYS check user privilege
 
@@ -232,7 +232,7 @@ $ id
 uid=1001(deploy) gid=1001(deploy) groups=1001(deploy),998(docker)
 ```
 
-# Priv Esc
+#Priv Esc
 
 Since we belongs to user group `docker`, we can run docker with root privilege, here we are trying to run the image mounting the host disk and chroot on it
 
