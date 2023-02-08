@@ -11,6 +11,13 @@ tags:
 
 Welcome to my write up for the easy box "Shoppy" from Hack the box, if you are interested in web app pentest, this box is definitely for you. Today I am going to show how I identify the nosql vulnerability in user login page and obtain the user creds for a foothold in the system. Then we will perform lateral movement by analysis the strings inside a binary that acts as a password manager and finally use the privileged user account to perform docker escape.
 
+# Table of content
+
+1. [Enumeration]
+2. [Foothold]
+3. [Lateral movement]
+4. [Priv Esc]
+
 # Enumeration
 
 ## nmap scan result
