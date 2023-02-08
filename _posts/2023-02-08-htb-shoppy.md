@@ -11,7 +11,7 @@ tags:
 
 Welcome to my write up for the easy box "Shoppy" from Hack the box, if you are interested in web app pentest, this box is definitely for you. Today I am going to show how I identify the nosql vulnerability in user login page and obtain the user creds for a foothold in the system. Then we will perform lateral movement by analysis the strings inside a binary that acts as a password manager and finally use the privileged user account to perform docker escape.
 
-#Enumeration
+# Enumeration
 
 ## nmap scan result
 ```bash
@@ -105,7 +105,7 @@ Using a simple password cracking tool like hashcat or johntheripper (or just go 
 
 josh: remembermethisway
 
-#Foothold
+# Foothold
 
 ## Mattermost
 
@@ -174,7 +174,7 @@ jaeger@shoppy:~$ id
 uid=1000(jaeger) gid=1000(jaeger) groups=1000(jaeger)
 ```
 
-#Lateral movement
+# Lateral movement
 
 ALWAYS check user privilege
 
@@ -225,7 +225,7 @@ $ id
 uid=1001(deploy) gid=1001(deploy) groups=1001(deploy),998(docker)
 ```
 
-#Priv Esc
+# Priv Esc
 
 Since we belongs to user group `docker`, we can run docker with root privilege, here we are trying to run the image mounting the host disk and chroot on it
 
