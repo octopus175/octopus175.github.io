@@ -13,7 +13,7 @@ Hi again, today I want to share my writeup on the Easy box "Previse" from Hack T
 
 After getting our foothold, we can extact and crack password hash that is stored in the local database, and finally perform path injection to escalate our privilege.
 
-# Enuemration
+# Enumeration
 
 ## nmap scan
 
