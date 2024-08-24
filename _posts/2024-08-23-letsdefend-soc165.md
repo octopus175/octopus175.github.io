@@ -62,6 +62,7 @@ Allowed
 # Solution
 
 Checking the network log to learn more about the traffic coming from the source IP `167.99.169.17`
+
 ![Log1](/assets/images/2024-08-23-letsdefend-soc165/Pasted_image_20240823201221.png)
 There are multiple requests coming from this source, let inspect the Request URL in these requests and see if there are any SQL payload in them.
 
@@ -74,6 +75,7 @@ Here are the Request URLs from the logs in chronological order:
 - https://172.16.17.18/search/?q=1%27%20ORDER%20BY%203--%2B
 
 There are total of five HTTP requests that is containing SQL injection payload, all five requests have HTTP Response Status code 500. Therefore we can assume the attack did not go well.
+
 ![Log 2](/assets/images/2024-08-23-letsdefend-soc165/Pasted_image_20240823202033.png)
 # Playbook Answers
 
